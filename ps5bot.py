@@ -1,11 +1,14 @@
 
 """
 This script is an automated ps5 availability bot.
+
 Author: Grady Horn
 Date: 2026-10-27
 
-The script functions by opening a browser, creating a tab and
-navigating to the product URL.
+The script functions by using Scavio to send an
+API request to check the availability of the 
+PS5 Pro products at Target stores. Upon finding
+the desired item, it sends a notification via ntfy.
 """
 import os
 import json

@@ -174,7 +174,8 @@ def sendNtfyAlert(message):
             headers={
                 "Title": "PS5 Pro Stock Alert",
                 "Priority": "high",
-                "Tags": "video_game,tada"
+                "Tags": "video_game,tada",
+                "Click": "https://www.target.com/p/-/A-93620188"
             },
             timeout=10
         )
@@ -194,18 +195,29 @@ def sendNtfyAlert(message):
 def calculateInterval():
     currTime = datetime.now(ZoneInfo("America/Phoenix"))
     hr = currTime.hour
+    min = currTime.minute
+    sec = currTime.second
+    minAdjust = 0
 
     if hr >= 0 and hr < 5:
-        interval = 1800  # 30 minutes in seconds
+        intervalMins = 30
+        minAdjust = intervalMins - (min % intervalMins)
+        interval = minAdjust * 60 - sec
 
     elif hr >= 5 and hr < 10:
-        interval = 120
+        intervalMins = 2
+        minAdjust = intervalMins - (min % intervalMins)
+        interval = minAdjust * 60 - sec
 
     elif hr >= 10 and hr < 22:
-        interval = 300
+        intervalMins = 5
+        minAdjust = intervalMins - (min % intervalMins)
+        interval = minAdjust * 60 - sec
 
     else:
-        interval = 900
+        intervalMins = 15
+        minAdjust = intervalMins - (min % intervalMins)
+        interval = minAdjust * 60 - sec
 
     print(f"Arizona time: {currTime:%I:%M:%S %p} | Next check in {interval} seconds.")
     return interval

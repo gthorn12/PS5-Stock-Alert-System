@@ -15,7 +15,8 @@ try:
         headers={
             "Title": "PS5 Bot test",
             "Priority": "high",
-            "Tags": "tada!"
+            "Tags": "tada!",
+            "Click": "https://www.target.com/p/-/A-93620188"
         },
         timeout=10
     )

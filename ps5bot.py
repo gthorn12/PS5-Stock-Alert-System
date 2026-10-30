@@ -28,10 +28,10 @@ TOPIC = os.environ["NTFY_TOPIC"]
 
 URL_0 = "https://www.target.com/p/playstation-5-pro-console/-/A-93620188"
 
+'''
 BRAVE_PATH = r"C:\Users\grady\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe"
 PROFILE_PATH = r"C:\Users\grady\Documents\ps5BotProfile"
 
-'''
 print("Brave Exists:", Path(BRAVE_PATH).is_file())
 print("Profile Path Exists:", Path(PROFILE_PATH).is_dir())
 

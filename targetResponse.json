@@ -1,0 +1,990 @@
+{
+    "modules": [
+        {
+            "module_type": "ProductDetailWebDatasourceFulfillmentAndVariations",
+            "version": 0,
+            "module_data": {
+                "data": {
+                    "product": {
+                        "__typename": "Product",
+                        "tcin": "93620188",
+                        "store_positions": [
+                            {
+                                "aisle": 18,
+                                "block": "B"
+                            },
+                            {
+                                "aisle": 18,
+                                "block": "B"
+                            },
+                            {
+                                "aisle": 18,
+                                "block": "B"
+                            }
+                        ],
+                        "notify_me_eligible": true,
+                        "pay_per_order_charges": {
+                            "one_day": 7.99,
+                            "scheduled_delivery": 9.99
+                        },
+                        "fulfillment": {
+                            "product_id": "93620188",
+                            "is_out_of_stock_in_all_store_locations": false,
+                            "sold_out": false,
+                            "store_options": [
+                                {
+                                    "location_id": "2920",
+                                    "store": {
+                                        "location_name": "Queen Creek Gantzel and Combs",
+                                        "mailing_address": {
+                                            "address_line1": "37854 N Gantzel Rd.",
+                                            "city": "Queen Creek",
+                                            "state": "Arizona",
+                                            "postal_code": "85140-3104"
+                                        }
+                                    },
+                                    "search_response_store_type": "PRIMARY",
+                                    "location_available_to_promise_quantity": 0.0,
+                                    "pre_order_location_available_to_promise_quantity": 0.0,
+                                    "order_pickup": {
+                                        "availability_status": "OUT_OF_STOCK"
+                                    },
+                                    "in_store_only": {
+                                        "availability_status": "OUT_OF_STOCK"
+                                    },
+                                    "ship_to_store": {
+                                        "availability_status": "UNAVAILABLE"
+                                    }
+                                }
+                            ],
+                            "shipping_options": {
+                                "availability_status": "OUT_OF_STOCK",
+                                "loyalty_availability_status": "OUT_OF_STOCK",
+                                "available_to_promise_quantity": 0.0,
+                                "reason_code": "INVENTORY_UNAVAILABLE",
+                                "services": []
+                            },
+                            "scheduled_delivery": {
+                                "location_id": "2920",
+                                "availability_status": "OUT_OF_STOCK",
+                                "location_available_to_promise_quantity": 0.0
+                            }
+                        }
+                    }
+                }
+            },
+            "module_placement_id": "ProductDetailWebDatasourceFulfillmentAndVariations",
+            "is_enrichment_deferred": false,
+            "module_type_version": "ProductDetailWebDatasourceFulfillmentAndVariations_0"
+        },
+        {
+            "module_type": "ProductDetailReviewsAndQuestions",
+            "version": 0,
+            "module_data": {
+                "question_count": 18,
+                "review_count": 89,
+                "hide_ratings": false,
+                "ratings_and_reviews": {
+                    "average": 3.82,
+                    "count": 244,
+                    "distribution": {
+                        "rating1": 59,
+                        "rating2": 6,
+                        "rating3": 10,
+                        "rating4": 15,
+                        "rating5": 154
+                    }
+                },
+                "fulfillment": {},
+                "buy_url": "https://www.target.com/p/playstation-5-pro-console/-/A-93620188",
+                "tcin": "93620188",
+                "data_by_tcin": [],
+                "rating_stars": {
+                    "__typename": "RatingStars",
+                    "click_interactions": [
+                        {
+                            "__typename": "ComponentClick",
+                            "component_id": "ReviewsAndQuestionsClick"
+                        },
+                        {
+                            "__typename": "FireflyClick",
+                            "firefly_event": {
+                                "feature_type": "BUY_BOX",
+                                "click_type": "RATINGS_AND_REVIEWS",
+                                "element": {
+                                    "id": "93620188",
+                                    "type": "TCIN"
+                                },
+                                "cdui": {
+                                    "layout_id": "web_pdp_default",
+                                    "module_type": "ProductDetailReviewsAndQuestions",
+                                    "module_group_id": "ProductDetailAboveTheFoldMobile",
+                                    "module_placement_id": "86204dd8-5b67-47d4-b191-38aaf34bb19e"
+                                },
+                                "event_type": "CLICK"
+                            }
+                        }
+                    ],
+                    "accessibility_label": "Average customer rating is 3.8 out of 5 stars with 244 reviews.",
+                    "component_list": [
+                        {
+                            "__typename": "RatingDisplay",
+                            "rating": 3.82,
+                            "size": "SM",
+                            "condensed": false
+                        },
+                        {
+                            "__typename": "TextQuill",
+                            "contents": [
+                                {
+                                    "attributes": {
+                                        "color": "color.text.base",
+                                        "fontsize": "font.caption"
+                                    },
+                                    "insert": {
+                                        "text": "244"
+                                    }
+                                },
+                                {
+                                    "attributes": {
+                                        "fontsize": "font.caption"
+                                    },
+                                    "insert": {
+                                        "targetnicollet": {
+                                            "__typename": "NicolletIcon",
+                                            "tint": "color.icon.subdued",
+                                            "accessibility_label": "Chevron right",
+                                            "resource_name": "chevron-right"
+                                        }
+                                    }
+                                }
+                            ],
+                            "paragraph_options": {
+                                "truncate": {
+                                    "max_lines": 1
+                                }
+                            }
+                        }
+                    ]
+                },
+                "rating_stars_extended": {
+                    "__typename": "RatingStars",
+                    "accessibility_label": "Average customer rating is 3.8 out of 5 stars with 244 reviews.",
+                    "component_list": [
+                        {
+                            "__typename": "TextQuill",
+                            "contents": [
+                                {
+                                    "attributes": {
+                                        "bold": true,
+                                        "color": "color.text.base",
+                                        "fontsize": "font.headline.sm"
+                                    },
+                                    "insert": {
+                                        "text": "3.8"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "__typename": "RatingDisplay",
+                            "rating": 3.82,
+                            "size": "MD",
+                            "condensed": false
+                        },
+                        {
+                            "__typename": "TextQuill",
+                            "contents": [
+                                {
+                                    "attributes": {
+                                        "color": "color.text.base",
+                                        "fontsize": "font.body.md"
+                                    },
+                                    "insert": {
+                                        "text": "244 guest ratings"
+                                    }
+                                }
+                            ],
+                            "paragraph_options": {
+                                "truncate": {
+                                    "max_lines": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "module_placement_id": "86204dd8-5b67-47d4-b191-38aaf34bb19e",
+            "is_enrichment_deferred": false,
+            "module_type_version": "ProductDetailReviewsAndQuestions_0"
+        },
+        {
+            "module_type": "ProductDetailAvailabilitySneakPeek",
+            "version": 1,
+            "module_data": {
+                "data_by_tcin": []
+            },
+            "module_placement_id": "d9b01f83-c2d6-4078-b9c9-764573f13f61",
+            "is_enrichment_deferred": false,
+            "module_type_version": "ProductDetailAvailabilitySneakPeek_1"
+        },
+        {
+            "module_type": "ProductDetailFulfillment",
+            "version": 1,
+            "module_data": {
+                "data_by_tcin": [
+                    {
+                        "tcin": "93620188",
+                        "default_fulfillment_type": "SHIPPING",
+                        "three_up_sections": [
+                            {
+                                "fulfillment_type": "PICKUP",
+                                "enabled": false,
+                                "selected_cell": {
+                                    "icon": {
+                                        "__typename": "NicolletIllustration",
+                                        "accessibility_label": "Pickup",
+                                        "options": {
+                                            "size": "size.illustration-min"
+                                        },
+                                        "resource_name": "pickup-inactive-sm"
+                                    },
+                                    "title": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Pickup"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "tagline": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": false,
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.caption"
+                                                },
+                                                "insert": {
+                                                    "text": "Not available"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "unselected_cell": {
+                                    "icon": {
+                                        "__typename": "NicolletIllustration",
+                                        "accessibility_label": "Pickup",
+                                        "options": {
+                                            "size": "size.illustration-min"
+                                        },
+                                        "resource_name": "pickup-inactive-sm"
+                                    },
+                                    "title": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Pickup"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "tagline": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": false,
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.caption"
+                                                },
+                                                "insert": {
+                                                    "text": "Not available"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "cta_lines": [
+                                    {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "color": "color.text.base",
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Out of stock at Queen Creek Gantzel and Combs"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "show_change_action_button": true
+                            },
+                            {
+                                "fulfillment_type": "DELIVERY",
+                                "enabled": false,
+                                "selected_cell": {
+                                    "icon": {
+                                        "__typename": "NicolletIllustration",
+                                        "options": {
+                                            "size": "size.illustration-min"
+                                        },
+                                        "resource_name": "sameday-inactive-sm"
+                                    },
+                                    "title": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Delivery"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "tagline": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": false,
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.caption"
+                                                },
+                                                "insert": {
+                                                    "text": "Check availability"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "unselected_cell": {
+                                    "icon": {
+                                        "__typename": "NicolletIllustration",
+                                        "options": {
+                                            "size": "size.illustration-min"
+                                        },
+                                        "resource_name": "sameday-inactive-sm"
+                                    },
+                                    "title": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Delivery"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "tagline": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": false,
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.caption"
+                                                },
+                                                "insert": {
+                                                    "text": "Check availability"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "cta_lines": [
+                                    {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "color": "color.text.base",
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Same-day Delivery to 85140"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.body.sm"
+                                                },
+                                                "insert": {
+                                                    "text": "Sign in to confirm your location"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "show_change_action_button": false
+                            },
+                            {
+                                "fulfillment_type": "SHIPPING",
+                                "enabled": false,
+                                "selected_cell": {
+                                    "icon": {
+                                        "__typename": "NicolletIllustration",
+                                        "options": {
+                                            "size": "size.illustration-min"
+                                        },
+                                        "resource_name": "ship-box-inactive-sm"
+                                    },
+                                    "title": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Shipping"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "tagline": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": false,
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.caption"
+                                                },
+                                                "insert": {
+                                                    "text": "Not available"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "unselected_cell": {
+                                    "icon": {
+                                        "__typename": "NicolletIllustration",
+                                        "options": {
+                                            "size": "size.illustration-min"
+                                        },
+                                        "resource_name": "ship-box-inactive-sm"
+                                    },
+                                    "title": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Shipping"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "tagline": {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": false,
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.caption"
+                                                },
+                                                "insert": {
+                                                    "text": "Not available"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "cta_lines": [
+                                    {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "bold": true,
+                                                    "color": "color.text.base",
+                                                    "fontsize": "font.body.md"
+                                                },
+                                                "insert": {
+                                                    "text": "Out of stock"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "show_change_action_button": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            "module_placement_id": "153b1a7b-a439-4c15-a84a-1ea7b2e29f4f",
+            "is_enrichment_deferred": false,
+            "module_type_version": "ProductDetailFulfillment_1"
+        },
+        {
+            "module_type": "ProductDetailAddToCart",
+            "version": 0,
+            "module_data": {
+                "data_by_tcin": [
+                    {
+                        "tcin": "93620188",
+                        "show_find_alternative": true,
+                        "add_to_cart_sections": [
+                            {
+                                "fulfillment_type": "PICKUP",
+                                "add_to_cart_element": {
+                                    "__typename": "AddToCartElement",
+                                    "tcin": "93620188",
+                                    "element_type": "DEFAULT",
+                                    "call_to_action_component": {
+                                        "__typename": "Button",
+                                        "label": "Add to cart",
+                                        "variant": "FILLED",
+                                        "size": "MD",
+                                        "full_width": true,
+                                        "component_id": "AddToCart.Disabled",
+                                        "click_interactions": [
+                                            {
+                                                "__typename": "ComponentClick",
+                                                "component_id": "AddToCart.Disabled"
+                                            }
+                                        ],
+                                        "accessibility_label": "Add to cart PlayStation 5 Pro Console",
+                                        "disabled": true
+                                    },
+                                    "show_add_to_cart_success_modal": true
+                                },
+                                "show_buy_now": false,
+                                "notify_me": {
+                                    "tcin": "93620188",
+                                    "location_id": "2920",
+                                    "notification_type": "OPU",
+                                    "notification_origin": "PDP"
+                                }
+                            },
+                            {
+                                "fulfillment_type": "DELIVERY",
+                                "add_to_cart_element": {
+                                    "__typename": "AddToCartElement",
+                                    "tcin": "93620188",
+                                    "element_type": "DEFAULT",
+                                    "call_to_action_component": {
+                                        "__typename": "Button",
+                                        "label": "Sign in",
+                                        "variant": "FILLED",
+                                        "size": "MD",
+                                        "full_width": true,
+                                        "component_id": "AddToCart.SignIn",
+                                        "click_interactions": [
+                                            {
+                                                "__typename": "ComponentClick",
+                                                "component_id": "AddToCart.SignIn"
+                                            }
+                                        ],
+                                        "accessibility_label": "Sign in",
+                                        "disabled": false
+                                    },
+                                    "show_add_to_cart_success_modal": true
+                                },
+                                "show_buy_now": false,
+                                "notify_me": {
+                                    "tcin": "93620188",
+                                    "location_id": "2920",
+                                    "notification_type": "SDD",
+                                    "notification_origin": "PDP"
+                                }
+                            },
+                            {
+                                "fulfillment_type": "SHIPPING",
+                                "add_to_cart_element": {
+                                    "__typename": "AddToCartElement",
+                                    "tcin": "93620188",
+                                    "element_type": "DEFAULT",
+                                    "call_to_action_component": {
+                                        "__typename": "Button",
+                                        "label": "Add to cart",
+                                        "variant": "FILLED",
+                                        "size": "MD",
+                                        "full_width": true,
+                                        "component_id": "AddToCart.Disabled",
+                                        "click_interactions": [
+                                            {
+                                                "__typename": "ComponentClick",
+                                                "component_id": "AddToCart.Disabled"
+                                            }
+                                        ],
+                                        "accessibility_label": "Add to cart PlayStation 5 Pro Console",
+                                        "disabled": true
+                                    },
+                                    "show_add_to_cart_success_modal": true
+                                },
+                                "show_buy_now": false,
+                                "notify_me": {
+                                    "tcin": "93620188",
+                                    "location_id": "3991",
+                                    "notification_type": "STH",
+                                    "notification_origin": "PDP"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "module_placement_id": "329c16d5-d281-4a1c-a2bd-d4d8c4ea5a7e",
+            "is_enrichment_deferred": false,
+            "module_type_version": "ProductDetailAddToCart_0"
+        },
+        {
+            "module_type": "ProductDetailFinance",
+            "version": 1,
+            "module_data": {
+                "data_by_tcin": [
+                    {
+                        "tcin": "93620188",
+                        "affirm_finance_messaging_click_data": {
+                            "finance_provider": {
+                                "finance_terms": [
+                                    {
+                                        "apr": 20.0,
+                                        "amount": 953.2,
+                                        "interest_amount": 53.21,
+                                        "installment_count": 6,
+                                        "installment_amount": 158.87,
+                                        "minimum_loan_amount": 50.0,
+                                        "billing_frequency": "6 months",
+                                        "installment_interval": "$158.87 every month"
+                                    },
+                                    {
+                                        "apr": 20.0,
+                                        "amount": 1000.44,
+                                        "interest_amount": 100.45,
+                                        "installment_count": 12,
+                                        "installment_amount": 83.37,
+                                        "minimum_loan_amount": 50.0,
+                                        "billing_frequency": "12 months",
+                                        "installment_interval": "$83.37 every month"
+                                    },
+                                    {
+                                        "apr": 19.99,
+                                        "amount": 1049.12,
+                                        "interest_amount": 149.13,
+                                        "installment_count": 18,
+                                        "installment_amount": 58.28,
+                                        "minimum_loan_amount": 50.0,
+                                        "billing_frequency": "18 months",
+                                        "installment_interval": "$58.28 every month"
+                                    }
+                                ],
+                                "finance_message": "<a class='affirm-modal-trigger'><span style=\"color:grey;\">As low as <span class='affirm-ala-price'>$59</span>/mo </span></a>",
+                                "finance_provider": "Affirm",
+                                "is_finance_eligible": true,
+                                "finance_minimum_loan_amount": 50.0,
+                                "is_finance_message_eligible": true,
+                                "finance_header": "Buy now, pay over time",
+                                "finance_footer": "Rates are between 0-36% APR. Payment options through Affirm are subject to an eligibility check and are provided by these lending partners: [affirm.com/lenders](https://www.affirm.com/lenders). Options depend on your purchase amount, and a down payment may be required. Affirm availability and eligibility may vary. Restrictions apply. See [affirm.com/terms#use](https://www.affirm.com/terms#use). Estimated payment amount may exclude taxes and shipping. For licenses and disclosures, including information for New Mexico residents, see [affirm.com/licenses](https://www.affirm.com/licenses). CA residents: Loans by Affirm Loan Services, LLC are made or arranged pursuant to a California Financing Law license. Affirm, Inc., NMLS 1883087. Affirm Loan Services, LLC, NMLS 1479506.",
+                                "financing_terms_url": "www.affirm.com/lenders",
+                                "financing_cell_header": "As low as $59/mo ",
+                                "financing_cell_body": "With Affirm"
+                            },
+                            "referring_url": "https://www.target.com/p/playstation-5-pro-console/-/A-93620188",
+                            "current_retail": 899.99
+                        },
+                        "finance_option_messaging_list": [
+                            {
+                                "__typename": "CellStandard",
+                                "leading_cell_accessory": {
+                                    "__typename": "IconAccessory",
+                                    "resource": {
+                                        "__typename": "NicolletIllustration",
+                                        "accessibility_label": "Target Circle",
+                                        "resource_name": "pay-circle-sm"
+                                    },
+                                    "height": 32,
+                                    "width": 32
+                                },
+                                "headline": {
+                                    "__typename": "TextQuill",
+                                    "contents": [
+                                        {
+                                            "attributes": {
+                                                "bold": true,
+                                                "color": "color.text.base",
+                                                "fontsize": "font.body.md.bold"
+                                            },
+                                            "insert": {
+                                                "text": "Save 5% every day"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "subhead": [
+                                    {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.body.sm"
+                                                },
+                                                "insert": {
+                                                    "text": "With Target Circle™ Card (restrictions apply)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "trailing_cell_accessory": {
+                                    "__typename": "IconAccessory",
+                                    "resource": {
+                                        "__typename": "NicolletIcon",
+                                        "tint": "color.icon.subdued",
+                                        "accessibility_label": "Info",
+                                        "resource_name": "info"
+                                    },
+                                    "height": 24,
+                                    "width": 24
+                                },
+                                "separator": false,
+                                "click_interactions": [
+                                    {
+                                        "__typename": "NavigationWebBrowser",
+                                        "url": "https://www.target.com/circlecard?cpng=redcard9235"
+                                    },
+                                    {
+                                        "__typename": "FireflyClick",
+                                        "firefly_event": {
+                                            "feature_type": "FINANCE_BLOCK",
+                                            "click_type": "CIRCLE_CARD",
+                                            "cdui": {
+                                                "layout_id": "web_pdp_default",
+                                                "module_type": "ProductDetailFinance",
+                                                "module_group_id": "ProductDetailAboveTheFoldMobile",
+                                                "module_placement_id": "9c5979f2-8b99-401c-bd6f-1fd2ab59c665"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "93620188",
+                                                    "type": "TCIN"
+                                                }
+                                            ],
+                                            "event_type": "CLICK"
+                                        }
+                                    }
+                                ],
+                                "accessibility_text": "Save 5% every day With Target Circle™ Card (restrictions apply), Learn more about Target Circle™ Card",
+                                "background_color": "color.background.base"
+                            },
+                            {
+                                "__typename": "CellStandard",
+                                "leading_cell_accessory": {
+                                    "__typename": "IconAccessory",
+                                    "resource": {
+                                        "__typename": "NicolletIllustration",
+                                        "accessibility_label": "Affirm",
+                                        "resource_name": "affirm-mark-tm"
+                                    },
+                                    "height": 32,
+                                    "width": 32
+                                },
+                                "headline": {
+                                    "__typename": "TextQuill",
+                                    "contents": [
+                                        {
+                                            "attributes": {
+                                                "bold": true,
+                                                "color": "color.text.base",
+                                                "fontsize": "font.body.md.bold"
+                                            },
+                                            "insert": {
+                                                "text": "As low as $59/mo "
+                                            }
+                                        }
+                                    ]
+                                },
+                                "subhead": [
+                                    {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.body.sm"
+                                                },
+                                                "insert": {
+                                                    "text": "With Affirm"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "trailing_cell_accessory": {
+                                    "__typename": "IconAccessory",
+                                    "resource": {
+                                        "__typename": "NicolletIcon",
+                                        "tint": "color.icon.subdued",
+                                        "accessibility_label": "Info",
+                                        "resource_name": "info"
+                                    },
+                                    "height": 24,
+                                    "width": 24
+                                },
+                                "separator": false,
+                                "click_interactions": [
+                                    {
+                                        "__typename": "ComponentClick",
+                                        "component_id": "AffirmFinanceMessagingClick"
+                                    },
+                                    {
+                                        "__typename": "FireflyClick",
+                                        "firefly_event": {
+                                            "feature_type": "FINANCE_BLOCK",
+                                            "click_type": "AFFIRM",
+                                            "cdui": {
+                                                "layout_id": "web_pdp_default",
+                                                "module_type": "ProductDetailFinance",
+                                                "module_group_id": "ProductDetailAboveTheFoldMobile",
+                                                "module_placement_id": "9c5979f2-8b99-401c-bd6f-1fd2ab59c665"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "93620188",
+                                                    "type": "TCIN"
+                                                }
+                                            ],
+                                            "event_type": "CLICK"
+                                        }
+                                    }
+                                ],
+                                "accessibility_text": "As low as $59/mo  With Affirm, Learn more about Affirm",
+                                "background_color": "color.background.base"
+                            },
+                            {
+                                "__typename": "CellStandard",
+                                "leading_cell_accessory": {
+                                    "__typename": "IconAccessory",
+                                    "resource": {
+                                        "__typename": "NicolletIllustration",
+                                        "accessibility_label": "PayPal",
+                                        "resource_name": "paypal-mark-tm"
+                                    },
+                                    "height": 32,
+                                    "width": 32
+                                },
+                                "headline": {
+                                    "__typename": "TextQuill",
+                                    "contents": [
+                                        {
+                                            "attributes": {
+                                                "bold": true,
+                                                "color": "color.text.base",
+                                                "fontsize": "font.body.md.bold"
+                                            },
+                                            "insert": {
+                                                "text": "Starting at $48.49/mo or as low as 0% APR"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "subhead": [
+                                    {
+                                        "__typename": "TextQuill",
+                                        "contents": [
+                                            {
+                                                "attributes": {
+                                                    "color": "color.text.subdued",
+                                                    "fontsize": "font.body.sm"
+                                                },
+                                                "insert": {
+                                                    "text": "With PayPal"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "trailing_cell_accessory": {
+                                    "__typename": "IconAccessory",
+                                    "resource": {
+                                        "__typename": "NicolletIcon",
+                                        "tint": "color.icon.subdued",
+                                        "accessibility_label": "Info",
+                                        "resource_name": "info"
+                                    },
+                                    "height": 24,
+                                    "width": 24
+                                },
+                                "separator": false,
+                                "click_interactions": [
+                                    {
+                                        "__typename": "ShowPayPalFinancingTermsModal",
+                                        "title": "Pay Later with PayPal",
+                                        "financing_terms_url": "https://www.paypal.com/credit-presentment/ptrk/?v=3.0&t=1792479546&fdata=OBcGAzRHBBYcHAQeSFRMKk90PRgwNE9jVWhoGjAsS0gtRmZoeRNrdFUEPFxwSQtHcFJfX3MHXFZBQF1BG0BeW1dlcF1kcE1jVyY.Bj1pSylMRnBtbwF.ZENfYQhkXntWZlZeUHcWTEVYUQIZSVRMKk90fl9yYllzQXF9X2x-WllaVXFubBNpdlVGNhlwKGpHHio7LxdyTEdaUUwAQxQAD090CUtkPAswFTwsVSw4GR0fAiY1Yl8tJgcGMl0iSWpFcEUYCipTTEc5UUwzfzY4NS8FADUIFD0RNw4MPHhpSUhMBC85eRMIdFUoG2sYPA5HcEdJRyBWHUdYMExRHVRMSU90LAQhNRpjVwloTmlpS0pMRiQ5MVZpdDRGdA9kX3hRYFNQVXUDXl5PQlRHH0NMS010aB41PQcmV2gJTnh-UlFbXnFqawJ4bENQZQhjXXpXcEVLR2JBTEc5UUxDA0VMS010aB42cE8CV2h4WGB6Xl5UUnNteRNrdFUOO0wnDRQPNUVJJmIWW1FNQF5AGEZbX15kcVpwaFZ7T2hoTHhpAwcZESIHO10sMFVGFRlwKz4VJQsFAzEXKB4JFR8ZSBsOD090aktkPB0lKSI5BnhpKkhMLgoICncbBj0oG2twSWhHcAULEipYAzkQFExRbVRMXV9kfV5wZ15xQnt4WGx-XVBVX2Z5exNpNBcTPFc.NygJNQFJRwMWTCgWBDIxXQUBAw00KwYgcE9hV2ggAS0tGDYeAjYHKlc7MABGdHhwSS0HPRcNR2IUTEcQHhkRTgEeDx90aCpkcF5sRmhoTHhpCQYYCTMqIRNpFVVGAGtwSWhHcBEbAydoCB4NFR8eTBkBE090CUtkNw8uBSxoTnppSwAeOCQ0MVEjIRwVIBlwKGpHNwUEFSYWTEVYUR0CSAYIBA8hIAUrDho7BixoThlpS19VVn9hbANxbUdTZw9kXHJSZFxJR2AWTBIeAgQUDFQtS09jflN1Yl1xT3F6WW1.XVFZUnNheRNrdFUKPkw2Gi4XOABJRwMWTABMRQlHSURVWg00LF52Zld7Q39wV258WAtbBSFpPQUpdFVEdBk8Az8BIwEODycWTCZYUQtFGBFaDl9teQkkNFpxQXBwWm9xUl5ZVSVuOlR5MEMGdBlySWoQIhABAmIWLUdYRVVBT0FbUg9kKFtzZVl7Qi95XWApCFBeASE9bFB9Nk1GdBtwSTkHPw9JRwMWTFdYUU5RDAYYCDE2IQRkcC5jVxwZPA0aLyggRmZ7eRMtIxEJIWc.CSYDcEUoR2JHCBQKHwMRQRwXCxo8JgQaJB4xAjssDjRpS0pMRjIrPUAXMgEOMRlwKGpHZFxZBHcBVQdIEVxGGUJUXghle1MkM1dxEC8sWzt9CVFMRmR5eUc7MAY4Jl0iGyIJPzsPEypTTEc5UUxFFUQPXlhtKFskYFh2QXB9CWl6UwgPXnQ-Pld8N0EEbBlwS2pHJxccFCpTTEc5UUxFFUQPXlhtKFskYFh2QXB9CWl6UwgPXnQ-Pld8N0EEbRlwS2pHIwEODycWTCZYUVpFGkZaW1ltfVpwZ15yQXt.WW1pS0pMRjctOlssdFUndBloJXg-aV0yNgZ1VSBBUUxTDFQIEh48OxMaJR1jVwloTmh.U1tZX3dsbAdpdFdGdF0lSWomcEUrKgp0JkdYU0xRWRIZS08VaEstJRoyBWx6Lnx6LExfITAvLxw4NA0XNFR.CyQLdFYuBTFSCQ8NXR0CSAYIBBo4LAQxdFwEGignCzw6T1srCig8OV5tZjIEOVE0Bj85OABNVQd2NzkhOVoBHDAKWTEXfwIqaQwpNHgLX28iHzpdMh4yFkF4PSwjJ3wzED5SFh4AEhdiIgxJCAUSFSMvWiU8LilwIThyJyUjHWB9RyIdXw0THRd6YxUKOk0.HG5VFVxRX20OVENLRg4FXwcIBA0sbFkBBD0GU3t.DSwxDxsyBCgtNkY6LFFUEW0CTXlQPQUGATZWCgNcQykVQ1g4OUtnfwUjNwswU3oNPxgRNSUsMwIKB34HGzM4AX0DJW5UZw0GEiZQHwcNGQIeeQwdD0tmDSsVGEtwQCohDjcmDwVIVAMNCGEcBzEmGB1jXi8PIgUKCiZkCBI6HwIbRBBIWSohOx8gcE9hV2ggAS0tDRsMEy43Nm0-MAYUPFc.SWomcEVZSHsEQ1ZYUU5RDBgIGA09KAQxDgcmV2gJTnhxJ1o1X34CCHcKbTJfdBlySWoFPQ0NCDdoBAJYUS1RDDQ3NTYcfht0FAlxKQt.BzZwCAIvVgVoblg9BkQyDFIfG3sOCSAaIiFPGFI-CgUEeSAiAF4tIQh9ByxyPSAuLGw4PFk8Cy0qYQdlHgRfH3MUSWpFcEUJCyxCAxJYUS1RDE1UU0BscEtkck9jGS8vCisXCQYYCTMqIW0rOhACdBkRSWozAkVJRWIWAgAfFR8vWRAfB090CUtkY1pjV2poTjQtGRoMACIHLEs4MFVGFRlwOAcqBTslNxxyNzkrMkxRDlRMCRwwLQMxDh4wGS08DC0XAw0ICTMxPlstJwdGdHhwSRsnCDskJxdyPzk1PyM3ciEoOCMKHDlkcE1jVzk7AD09CR0yASY1MV4xdFUndBkCIAQ0BTs8IxF6TEdaUUwUSBcYDTE8LUtkEU9jQX96WzwpWl5bBH48PRNpdlVGJUo0Gy4IJQkNCDdoDg4YHgMVQVRMKk90HDoWBTwHNwQ&cks=NzYwOTdlNzIxZjdjMzZlOTNkNmIzMWZjYTY4ZjBkZDA&e=1.0&message_request_id=caf3b9c1-77f4-41f0-99da-a00699ff7efc&bdata=pubid%3D9M3X89ZPEB8F8%26vstrid%3D581b4ace1a16479d402842eeffe379de%26vstid%3D581b4ace1a16479d402842eeffe379df%26ts%3D1792479546&disableSetCookie=true"
+                                    },
+                                    {
+                                        "__typename": "FireflyClick",
+                                        "firefly_event": {
+                                            "feature_type": "FINANCE_BLOCK",
+                                            "click_type": "PAYPAL",
+                                            "cdui": {
+                                                "layout_id": "web_pdp_default",
+                                                "module_type": "ProductDetailFinance",
+                                                "module_group_id": "ProductDetailAboveTheFoldMobile",
+                                                "module_placement_id": "9c5979f2-8b99-401c-bd6f-1fd2ab59c665"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "id": "93620188",
+                                                    "type": "TCIN"
+                                                }
+                                            ],
+                                            "event_type": "CLICK"
+                                        }
+                                    }
+                                ],
+                                "accessibility_text": "Starting at $48.49/mo or as low as 0% APR With PayPal, Learn more about PayPal",
+                                "background_color": "color.background.base"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "module_placement_id": "9c5979f2-8b99-401c-bd6f-1fd2ab59c665",
+            "is_enrichment_deferred": false,
+            "module_type_version": "ProductDetailFinance_1"
+        }
+    ],
+    "extensions": {}
+}

@@ -1,0 +1,22 @@
+# Secrets and configuration
+.env
+.env.*
+!.env.example
+*.pem
+
+# Local runtime state
+localStorage.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Playwright browser profiles
+ps5BotProfile/
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db

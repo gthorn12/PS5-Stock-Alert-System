@@ -27,6 +27,7 @@ MY_KEY = os.environ["API_KEY"]
 TOPIC = os.environ["NTFY_TOPIC"]
 
 URL_0 = "https://www.target.com/p/playstation-5-pro-console/-/A-93620188"
+URL_1 = "https://www.target.com/p/playstation-5-console-digital-edition/-/A-94961316"
 
 BRAVE_PATH = r"C:\Users\grady\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe"
 PROFILE_PATH = r"C:\Users\grady\Documents\ps5BotProfile"
@@ -59,30 +60,48 @@ def saveLocalStorage(data):
 def sendScavioRequest():
     successfulHits = []
     client = ScavioClient(api_key=MY_KEY)
+
     try:
-        stock = client.target.availability(PRODUCT_TCIN, zip=TARGET_ZIP)
+        stock1 = client.target.availability(PS5_PRO_TCIN, zip=TARGET_ZIP)
+        stock2 = client.target.availability(PS5_DIGITAL_TCIN, zip=TARGET_ZIP)
     except Exception as e:
         print("Error fetching stock availability:", e)
         return None
 
     try:
-        stores = stock["data"]["stores"]
+        stores1 = stock1["data"]["stores"]
+        stores2 = stock2["data"]["stores"]
     except KeyError:
         print("Error: Scavio did not return a valid stores list.")
         return None
- 
-    for store in stores:
+
+    for store in stores1:
+        productName = "PS5 Pro"
+
         if store["in_store"] != "out_of_stock" and store["quantity"] > 0:
-            if PRODUCT_TCIN == PS5_DIGITAL_TCIN:
-                productName = "PS5 Digital"
-            elif PRODUCT_TCIN == PS5_PRO_TCIN:
-                productName = "PS5 Pro"
             successfulHits.append(
                 f"{store['name']} has {store['quantity']} {productName}"
                 f"{'' if store['quantity'] == 1 else 's'} available in-store!"
             )
 
         print(
+            f"{productName} | "
+            f"{store['name']}: "
+            f"{store['in_store']} "
+            f"(Quantity: {store['quantity']})"
+        )
+
+    for store in stores2:
+        productName = "PS5 Digital"
+
+        if store["in_store"] != "out_of_stock" and store["quantity"] > 0:
+            successfulHits.append(
+                f"{store['name']} has {store['quantity']} {productName}"
+                f"{'' if store['quantity'] == 1 else 's'} available in-store!"
+            )
+
+        print(
+            f"{productName} | "
             f"{store['name']}: "
             f"{store['in_store']} "
             f"(Quantity: {store['quantity']})"

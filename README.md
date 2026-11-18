@@ -1,6 +1,6 @@
 # PS5 Pro Stock Monitor
 
-A Python-based inventory monitoring application designed to check PlayStation 5 Pro availability across multiple Target locations and send push notifications when stock becomes available. test.
+A Python-based inventory monitoring application designed to check PlayStation 5 Pro availability across multiple Target locations and send push notifications when stock becomes available.
 
 ## Features
 

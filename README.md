@@ -40,3 +40,9 @@ The project became an opportunity to explore API integration, automated monitori
 ## Project Status
 
 The application is operational and has successfully completed extended monitoring sessions. Live detection of an actual restock has not yet been verified.
+
+## License
+
+Copyright © 2026. All rights reserved.
+
+This repository is publicly available for viewing and portfolio demonstration purposes. No additional permission is granted to reproduce, modify, redistribute, or commercially exploit the source code, except as permitted by applicable law or GitHub's Terms of Service.

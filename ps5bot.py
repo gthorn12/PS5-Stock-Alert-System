@@ -276,6 +276,14 @@ if __name__ == "__main__":
             firstAttempt = False
 
         if successfulHits is not None:
+            print(f"Previous hits: {previousHits}")
+            print(f"Successful hits: {successfulHits}")
+            print(f"Lists are equal: {successfulHits == previousHits}")
+            print(f"Sorted lists are equal: {sorted(successfulHits) == sorted(previousHits)}")
+
+            print(f"Added: {set(successfulHits) - set(previousHits)}")
+            print(f"Removed: {set(previousHits) - set(successfulHits)}")
+
             if successfulHits != previousHits:
                 if not successfulHits:
                     message = "PS5 Pros are now unavailable."

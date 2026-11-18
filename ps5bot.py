@@ -211,35 +211,24 @@ def sendNtfyAlert(message):
         print("Error sending ntfy alert:", e)
         return False
 
-def calculateInterval():
+def calculateSleepInterval():
     currTime = datetime.now(ZoneInfo("America/Phoenix"))
     hr = currTime.hour
-    min = currTime.minute
-    sec = currTime.second
-    minAdjust = 0
 
-    if hr >= 0 and hr < 5:
-        intervalMins = 30
-        minAdjust = intervalMins - (min % intervalMins)
-        interval = minAdjust * 60 - sec
+    if hr >= 1 and hr < 4:
+        pollingInterval = 30
 
-    elif hr >= 5 and hr < 10:
-        intervalMins = 2
-        minAdjust = intervalMins - (min % intervalMins)
-        interval = minAdjust * 60 - sec
+    elif hr >= 4 and hr < 8:
+        pollingInterval = 300
 
-    elif hr >= 10 and hr < 22:
-        intervalMins = 5
-        minAdjust = intervalMins - (min % intervalMins)
-        interval = minAdjust * 60 - sec
+    else: 
+        pollingInterval = 1800
 
-    else:
-        intervalMins = 15
-        minAdjust = intervalMins - (min % intervalMins)
-        interval = minAdjust * 60 - sec
+    elapsedTime = currTime.minute * 60 + currTime.second
+    sleepInterval = pollingInterval - (elapsedTime % pollingInterval)
 
-    print(f"Arizona time: {currTime:%I:%M:%S %p} | Next check in {interval} seconds.")
-    return interval
+    print(f"Arizona time: {currTime:%I:%M:%S %p} | Next check in {sleepInterval} seconds.")
+    return sleepInterval
 
 """
 Test code for checking PS5 availability 
@@ -302,7 +291,7 @@ if __name__ == "__main__":
             "remainingCredits": remainingCredits
         })
 
-        time.sleep(calculateInterval())  # Wait for the calculated interval before the next iteration
+        time.sleep(calculateSleepInterval())  # Wait for the calculated interval before the next iteration
 
 
 
